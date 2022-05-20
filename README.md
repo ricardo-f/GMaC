@@ -32,6 +32,6 @@ Create a repository that can be able to create other repositories with pre confi
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
-- [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)0
+- [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)
 - [Terrform Action to GHA](https://github.com/hashicorp/setup-terraform)
 - [Criar um token de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
