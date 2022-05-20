@@ -21,7 +21,6 @@ Create a repository that can be able to create other repositories with pre confi
 - Personal project
 - Learn more about this tools
 - Share knowledge
----
 
 ## What Need to be done?
 
@@ -30,3 +29,9 @@ Create a repository that can be able to create other repositories with pre confi
 - Adjust README with the changes
 - Create a basic terraform files
 - Create a basic workflow
+
+### Extra Docs and Ref:
+- [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
+- [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)0
+- [Terrform Action to GHA](https://github.com/hashicorp/setup-terraform)
+- [Criar um token de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
