@@ -24,15 +24,16 @@ Create a repository that can be able to create other repositories with pre confi
 
 ## What Need to be done?
 
-- Basic config on this repo - :white_check_mark:
-- Create codeowners - :white_check_mark:
-- Adjust README with the changes  - :checkered_flag:
-- Create a basic terraform files - :white_check_mark:
-- Create a basic workflow - :white_check_mark:
-
-## Notes and drafts:
-> This section is temporary
-Evaluate terraform cloud as terraform project backend - :triangular_flag_on_post:
+- To Do :triangular_flag_on_post:
+    - Adjust README with the changes
+    - Evaluate new tests for this project
+- Doing :running:
+    - Testing terraform cloud as remote backend
+- Done :white_check_mark:
+    - Basic config on this repo
+    - Create codeowners
+    - Create a basic terraform files
+    - Create a basic workflow
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
