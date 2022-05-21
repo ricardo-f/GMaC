@@ -1,4 +1,11 @@
 terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "sector-c"
+    workspaces {
+      name = "gmac-prod"
+    }
+  }
   required_providers {
     github = {
       source  = "integrations/github"
@@ -10,3 +17,4 @@ terraform {
 provider "github" {
   token = var.pat
 }
+
