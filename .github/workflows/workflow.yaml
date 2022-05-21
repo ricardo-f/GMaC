@@ -23,8 +23,8 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
-          with:
-            cli_config_credentials_token: ${{ secrets.TF_GMAC_TOKEN }}
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_GMAC_TOKEN }}
 
       - name: Terraform Format
         id: fmt
