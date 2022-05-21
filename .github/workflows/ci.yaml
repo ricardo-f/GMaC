@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  terraform:
+  job_terraform:
     name: "Terraform checks"
     runs-on: ubuntu-latest
     defaults:
@@ -40,3 +40,17 @@ jobs:
           export TF_VAR_pat=${{ secrets.GMACTOKEN }}
           terraform plan -no-color
         continue-on-error: true
+  
+  job_checkov:
+    name: checkov-action
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run Checkov action
+        id: checkov
+        uses: bridgecrewio/checkov-action@v12
+        with:
+          directory: terraform/
+          framework: terraform
+          output_format: sarif
