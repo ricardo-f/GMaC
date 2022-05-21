@@ -6,7 +6,7 @@ resource "github_repository" "example" {
   has_issues             = false
   has_projects           = false
   has_wiki               = false
-  is_template            = true
+  is_template            = false
   allow_merge_commit     = true
   allow_squash_merge     = true
   allow_auto_merge       = false
@@ -16,4 +16,15 @@ resource "github_repository" "example" {
   archive_on_destroy     = true
   topics                 = ["eac", "test", "created-by-gmac"]
   vulnerability_alerts   = true
+}
+
+resource "github_branch_protection" "example" {
+  repository_id    = github_repository.example.node_id
+  pattern          = "main"
+  enforce_admins   = false
+  allows_deletions = false
+  required_pull_request_reviews {
+    dismiss_stale_reviews = true
+    restrict_dismissals   = true
+  }
 }
