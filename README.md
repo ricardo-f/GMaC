@@ -30,6 +30,7 @@ Create a repository that can be able to create other repositories with pre confi
 - Doing :running:
     - Testing terraform cloud as remote backend
     - Testing checkov as sec tool
+    - Testing basic repo creation
 - Done :white_check_mark:
     - Basic config on this repo
     - Create codeowners
