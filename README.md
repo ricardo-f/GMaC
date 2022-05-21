@@ -29,6 +29,7 @@ Create a repository that can be able to create other repositories with pre confi
     - Evaluate new tests for this project
 - Doing :running:
     - Testing terraform cloud as remote backend
+    - Testing checkov as sec tool
 - Done :white_check_mark:
     - Basic config on this repo
     - Create codeowners
@@ -41,3 +42,4 @@ Create a repository that can be able to create other repositories with pre confi
 - [Terrform Action to GHA](https://github.com/hashicorp/setup-terraform)
 - [Terraform Cloud](https://cloud.hashicorp.com/products/terraform)
 - [Criar um token de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- [Checkov Docs](https://www.checkov.io/1.Welcome/Quick%20Start.html)
