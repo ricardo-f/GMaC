@@ -54,6 +54,7 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: terraform/
+          skip_check: CKV_GIT_1
 
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
