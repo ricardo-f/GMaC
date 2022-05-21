@@ -2,8 +2,9 @@ name: "Code Validation"
 
 on:
   push:
-    branches: [ '*' ]
-    branches-ignore: [ main ]
+    branches:
+      - '*' 
+      - '!main'
 
 jobs:
   terraform:
