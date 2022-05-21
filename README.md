@@ -24,14 +24,19 @@ Create a repository that can be able to create other repositories with pre confi
 
 ## What Need to be done?
 
-- Basic config on this repo
-- Create codeowners
-- Adjust README with the changes
-- Create a basic terraform files
-- Create a basic workflow
+- Basic config on this repo - :white_check_mark:
+- Create codeowners - :white_check_mark:
+- Adjust README with the changes  - :checkered_flag:
+- Create a basic terraform files - :white_check_mark:
+- Create a basic workflow - :white_check_mark:
+
+## Notes and drafts:
+> This section is temporary
+Evaluate terraform cloud as terraform project backend - :triangular_flag_on_post:
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
 - [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)
 - [Terrform Action to GHA](https://github.com/hashicorp/setup-terraform)
+- [Terraform Cloud](https://cloud.hashicorp.com/products/terraform)
 - [Criar um token de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
