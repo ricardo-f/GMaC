@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    name: "Terraform"
+    name: "Terraform deployment"
     runs-on: ubuntu-latest
     defaults:
       run:
