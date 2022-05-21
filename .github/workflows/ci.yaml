@@ -58,6 +58,6 @@ jobs:
           output_format: sarif
       
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: results.sarif
+          sarif_file: terraform/results.sarif
