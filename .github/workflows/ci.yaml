@@ -42,7 +42,9 @@ jobs:
         continue-on-error: true
   
   job_checkov:
-    name: checkov-action
+    runs-on: ubuntu-latest
+    name: Checkov analyses
+    needs: job_terraform
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
