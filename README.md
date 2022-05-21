@@ -21,12 +21,12 @@ Create a repository that can be able to create other repositories with pre confi
 ## What Need to be done?
 
 - To Do :triangular_flag_on_post:
+    - Write final README.md (translate too?)
     - Automate tasks such as:
         - Terraform-docs generation
         - Terraform fmt application
-    - Test tflint in ci workflow
 - Doing :running:
-    - Add more dynamic/logic to the tf code
+    - Test tflint in ci workflow
 - Done :white_check_mark:
     - Basic config on this repo
     - Create codeowners
@@ -35,6 +35,7 @@ Create a repository that can be able to create other repositories with pre confi
     - Testing terraform cloud as remote backend
     - Testing checkov as sec tool
     - Testing basic repo creation
+    - Add more dynamic/logic to the tf code
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
