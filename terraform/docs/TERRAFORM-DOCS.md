@@ -15,6 +15,7 @@
 | Name | Type |
 |------|------|
 | [github_repository.example](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
+| [github_branch_protection.example](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/branch_protection) | resource |
 
 ## Inputs
 
