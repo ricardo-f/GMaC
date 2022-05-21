@@ -7,7 +7,7 @@ on:
 
 jobs:
   job_terraform:
-    name: "Terraform checks"
+    name: "Terraform plan and checks"
     runs-on: ubuntu-latest
     defaults:
       run:
