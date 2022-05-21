@@ -14,6 +14,6 @@ resource "github_repository" "example" {
   auto_init              = true
   gitignore_template     = "terraform"
   archive_on_destroy     = true
-  topics                 = ["EaC", "test", "Managed by GMaC"]
+  topics                 = ["eac", "test", "managed by gmac"]
   vulnerability_alerts   = true
 }
