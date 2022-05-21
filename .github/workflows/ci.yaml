@@ -52,10 +52,6 @@ jobs:
       - name: Run Checkov action
         id: checkov
         uses: bridgecrewio/checkov-action@v12
-        with:
-          directory: terraform/
-          framework: terraform
-          output_format: sarif
       
       # - name: Upload result to GitHub Code Scanning
       #   uses: github/codeql-action/upload-sarif@v2
