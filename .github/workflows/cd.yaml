@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  terraform:
+  job_deployment:
     name: "Terraform deployment"
     runs-on: ubuntu-latest
     defaults:
