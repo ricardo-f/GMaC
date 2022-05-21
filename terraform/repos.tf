@@ -12,7 +12,7 @@ resource "github_repository" "example" {
   allow_auto_merge       = false
   delete_branch_on_merge = true
   auto_init              = true
-  gitignore_template     = "terraform"
+  gitignore_template     = "Terraform"
   archive_on_destroy     = true
   topics                 = ["eac", "test", "created-by-gmac"]
   vulnerability_alerts   = true
