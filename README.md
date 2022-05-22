@@ -2,17 +2,17 @@
 
 ## Objective:
 
-This repo create other repositories with pre configurated settings such as:
+This repo creates other repositories with pre configurated settings such as:
 - Branch protection.
-- Deletion of brach that were merged.
-- Template files like the ones decribed here: [Creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
-- Organizations, teams and users, _I don use but is a available resource at the provider docs_.
+- Deletion of brach that was merged.
+- Template files like the ones described here: [Creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
+- Organizations, teams, and users, _I don't use but is an available resource at the provider docs_.
 
 ## The brief how:
 
 - Terraform files with terraform cloud configurated as remote state.
-- Two workflow files created one with the CI stuff to ensure code quality and security and other wit CD to apply what whas defined.
-- To create a repo you only need to add his name to the list at "pub_repo_names" variable and tho the PR process.
+- Two workflow files were created one with the CI stuff to ensure code quality and security and the other with CD to apply what was defined.
+- To create a repo you only need to add his name to the list at "pub_repo_names" variable and do the PR process.
 
 ## How?
 
@@ -25,23 +25,23 @@ This repo create other repositories with pre configurated settings such as:
         - Checkov for sec test
     - The CD file has:
         - The plan and a PR comment with what will be created
-        - And the apply of what has been show on the plan in the PR comment
-- It's necessary to create two secret variables _depending on what backend you will chose to use, here I used terraform cloud so 2 secret vars_
+        - And the "apply" of what has been displayed on the plan in the PR comment
+- It's necessary to create two secret variables _depending on what backend you will choose to use, here I used terraform cloud so 2 secret vars_
     - First is the Personal Acess Token
-       - Is used to authenticate the github provider
-       - In terraform there is only a empty reference called "pat"
+       - Is used to authenticate the GitHub provider
+       - In terraform, there is only an empty reference called "pat"
        - At CI and CD files the value is of $GMACTOKEN is exported to "pat"
     - The second is $TF_GMAC_TOKEN
-       - This is used for authentication at terraform cloud
+       - This is used for authentication at Terraform cloud
        - It's defined at terraform setup steps in the CI and CD files.
 
-## The developemnt flow:
+## The development flow:
 
-It's look like TBD (Trunk Based Development).
-- Any branch will pre test and validate the code.
+It looks like TBD (Trunk Based Development).
+- Any branch will pre-test and validate the code.
 - pull request will only show what will be changed.
-- merge to main branch will deploy/change the resources at terraform.
-- The rollback plan would be revert the PR (**but I'm not a 100% percert sure about this logic.**).
+- merge to the main branch will deploy/change the resources at Terraform.
+- The rollback plan would be to revert the PR (**but I'm not 100% percent sure about this logic.**).
 
 ## Why?
 
@@ -63,7 +63,7 @@ It's look like TBD (Trunk Based Development).
 
 > # Temporary notes
 
-## What Need to be done?
+## What Needs to be done?
 
 - To Do :triangular_flag_on_post:
     - Write final README.md (translate too?)
