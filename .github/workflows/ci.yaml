@@ -14,7 +14,7 @@ jobs:
         working-directory: ./terraform
     
     steps:
-      - name: Checkout
+      - name: Checkout source code 
         uses: actions/checkout@v3
 
       - name: Setup Terraform
@@ -47,8 +47,8 @@ jobs:
     needs: job_terraform
     
     steps:
-      # - name: Checkout source code 
-      #   uses: actions/checkout@v2
+      - name: Checkout source code 
+        uses: actions/checkout@v2
         
       - name: Setup TFLint
         uses: terraform-linters/setup-tflint@v2
@@ -64,8 +64,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: job_tflint
     steps:
-      # - name: Checkout repo
-      #   uses: actions/checkout@v3
+      - name: Checkout source code 
+        uses: actions/checkout@v3
 
       - name: Run Checkov action
         id: checkov
