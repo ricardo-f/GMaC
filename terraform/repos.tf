@@ -3,6 +3,8 @@ resource "github_repository" "public" {
 
   name                   = lower(replace(each.key, " ", "-"))
   visibility             = "public"
+  has_issues             = true
+  has_projects           = true
   allow_merge_commit     = true
   allow_squash_merge     = true
   allow_auto_merge       = false
