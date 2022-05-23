@@ -1,7 +1,7 @@
 resource "github_repository" "public" {
   for_each = toset(var.pub_repo_names)
 
-  name                   = each.key
+  name                   = lower(replace(each.key, " ", "-"))
   visibility             = "public"
   allow_merge_commit     = true
   allow_squash_merge     = true
