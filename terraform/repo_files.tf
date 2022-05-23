@@ -9,6 +9,6 @@ resource "github_repository_file" "gitignore_file" {
   overwrite_on_create = false
 
   lifecycle {
-    ignore_changes = [ content, sha ]
+    ignore_changes = [content, sha]
   }
 }
