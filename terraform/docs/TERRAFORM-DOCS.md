@@ -23,7 +23,6 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_pat"></a> [pat](#input\_pat) | Personal Access Token, need to be generated at your pesonal setting | `string` | n/a | yes |
 | <a name="input_pub_repo_names"></a> [pub\_repo\_names](#input\_pub\_repo\_names) | List of public repository names | `list(string)` | `[]` | no |
 
 ## Outputs

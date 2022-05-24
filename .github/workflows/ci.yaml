@@ -1,5 +1,7 @@
 name: "Code Validation"
 
+permissions: write-all
+
 on:
   push:
     branches-ignore:
@@ -36,9 +38,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: | 
-          export TF_VAR_pat=${{ secrets.GMACTOKEN }}
-          terraform plan -no-color
+        run: terraform plan -no-color
         continue-on-error: true
   
   job_tflint:

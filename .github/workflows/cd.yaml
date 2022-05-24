@@ -1,5 +1,7 @@
 name: "Repository creation workflow"
 
+permissions: write-all
+
 on:
   push:
     branches:
@@ -29,9 +31,7 @@ jobs:
       
       - name: Terraform Plan
         id: plan
-        run: | 
-          export TF_VAR_pat=${{ secrets.GMACTOKEN }}
-          terraform plan -no-color
+        run: terraform plan -no-color
         continue-on-error: true
 
       - uses: actions/github-script@v6
@@ -94,6 +94,4 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: | 
-          export TF_VAR_pat=${{ secrets.GMACTOKEN }}
-          terraform apply -auto-approve -input=false
+        run: terraform apply -auto-approve -input=false

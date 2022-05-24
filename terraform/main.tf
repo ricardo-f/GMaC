@@ -14,6 +14,4 @@ terraform {
   }
 }
 
-provider "github" {
-  token = var.pat
-}
+provider "github" {}
