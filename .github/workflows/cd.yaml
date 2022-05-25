@@ -26,8 +26,7 @@ jobs:
           output-method: inject
           git-push: true
           git-push-sign-off: true
-          git-push-user-name: github-actions[bot]
-          git-push-user-email: "github-actions[bot]@users.noreply.github.com"
+          git-push-user-name: ${{ GITHUB_ACTOR }}
           git-commit-message: "Generating terraform documentation"
 
   job_deployment:
