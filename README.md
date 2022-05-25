@@ -49,3 +49,8 @@ It looks like TBD (Trunk Based Development).
 - [Checkov Docs](https://www.checkov.io/1.Welcome/Quick%20Start.html)
 - [Terraform-Docs GHA](https://github.com/terraform-docs/gh-actions)
 - [TFLint](https://github.com/terraform-linters/tflint)
+
+
+<!-- BEGIN_TF_DOCS -->
+{{ .Content }}
+<!-- END_TF_DOCS -->
