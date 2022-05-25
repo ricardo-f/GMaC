@@ -25,7 +25,7 @@ jobs:
           output-file: docs/TERRAFORM-DOCS.md
           output-method: inject
           git-push: "true"
-          git-push-user-name: ${{ github.actor }}
+          git-push-user-name: ricardo-f
           git-commit-message: "Generating terraform documentation"
 
   job_deployment:
