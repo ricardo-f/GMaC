@@ -14,10 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-
+      - name: checkout
+        uses: actions/checkout@v3
+        
       - name: Render terraform docs inside the TERRAFORM-DOCS.md and push changes back to PR branch
         uses: terraform-docs/gh-actions@v1.0.0
         with:
@@ -25,8 +24,6 @@ jobs:
           output-file: docs/TERRAFORM-DOCS.md
           output-method: inject
           git-push: true
-          git-push-user-name: "ricardo-f"
-          git-push-user-email: "riclima1990@gmail.com"
           git-commit-message: "Generating terraform documentation"
 
   job_deployment:
