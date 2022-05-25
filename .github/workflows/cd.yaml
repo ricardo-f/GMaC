@@ -27,7 +27,6 @@ jobs:
           output-file: docs/TERRAFORM-DOCS.md
           output-method: inject
           git-push: "true"
-          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
