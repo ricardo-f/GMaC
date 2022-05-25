@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
         
       - name: Render terraform docs inside the TERRAFORM-DOCS.md and push changes back to PR branch
         uses: terraform-docs/gh-actions@v1.0.0
