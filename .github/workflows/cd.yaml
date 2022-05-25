@@ -25,6 +25,7 @@ jobs:
           output-file: docs/TERRAFORM-DOCS.md
           output-method: inject
           git-push: "true"
+          git-commit-message: "Generating Terraform documentation"
 
   job_deployment:
     name: "Terraform deployment"
