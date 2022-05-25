@@ -10,19 +10,19 @@ on:
 
 jobs:
   job_tfdoc_genaration:
-  runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
+    runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
 
-    - name: Render terraform docs inside the TERRAFORM-DOCS.md and push changes back to PR branch
-      uses: terraform-docs/gh-actions@v1.0.0
-      with:
-        working-dir: .
-        output-file: terrform/docs/TERRAFORM-DOCS.md
-        output-method: inject
-        git-push: "true"
+      - name: Render terraform docs inside the TERRAFORM-DOCS.md and push changes back to PR branch
+        uses: terraform-docs/gh-actions@v1.0.0
+        with:
+          working-dir: .
+          output-file: terrform/docs/TERRAFORM-DOCS.md
+          output-method: inject
+          git-push: "true"
 
   job_deployment:
     name: "Terraform deployment"
