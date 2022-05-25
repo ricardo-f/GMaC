@@ -9,29 +9,8 @@ on:
   pull_request:
 
 jobs:
-  job_tfdoc_genaration:
-    name: "Terraform docs generation"
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-        
-      - name: Render terraform docs inside the TERRAFORM-DOCS.md and push changes back
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: terraform-docs/gh-actions@v1.0.0
-        with:
-          working-dir: terraform/
-          output-file: docs/TERRAFORM-DOCS.md
-          output-method: inject
-          git-push: true
-          git-commit-message: "Generating terraform documentation"
-
   job_deployment:
     name: "Terraform deployment"
-    needs: job_tfdoc_genaration
     runs-on: ubuntu-latest
     defaults:
       run:
