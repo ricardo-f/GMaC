@@ -22,7 +22,7 @@ jobs:
         uses: terraform-docs/gh-actions@v1.0.0
         with:
           working-dir: .
-          output-file: README.md
+          output-file: ./terrform/docs/TERRAFORM-DOCS.md
           output-method: inject
           git-push: "true"
 
