@@ -26,6 +26,7 @@ jobs:
           output-method: inject
           git-push: true
           git-push-user-name: "ricardo-f"
+          git-push-user-email: "riclima1990@gmail.com"
           git-commit-message: "Generating terraform documentation"
 
   job_deployment:
