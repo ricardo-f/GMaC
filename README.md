@@ -33,6 +33,10 @@ This repo creates other repositories with pre configurated settings such as:
 - Learn more about the used tools.
 - Share knowledge (that's why is public).
 
+## Want help or test?
+
+**Read the [contrib file](.github/docs/CONTRIBUTING.md)**
+
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
 - [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)
