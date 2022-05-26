@@ -1,3 +1,4 @@
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -9,6 +10,10 @@
 | Name | Version |
 |------|---------|
 | <a name="provider_github"></a> [github](#provider\_github) | ~> 4.0 |
+
+## Modules
+
+No modules.
 
 ## Resources
 
@@ -31,3 +36,4 @@
 |------|-------------|
 | <a name="output_pub_http_clone_url"></a> [pub\_http\_clone\_url](#output\_pub\_http\_clone\_url) | URLs for git clone the public repository via HTTPS. |
 | <a name="output_pub_ssh_clone_url"></a> [pub\_ssh\_clone\_url](#output\_pub\_ssh\_clone\_url) | URLs for git clone the public repository via SSH. |
+<!-- END_TF_DOCS -->
