@@ -27,19 +27,15 @@ This repo creates other repositories with pre configurated settings such as:
         - The plan and a PR comment with what will be created
         - And the "apply" of what has been displayed on the plan in the PR comment
 
-## The development flow:
-
-It looks like TBD (Trunk Based Development).
-- Any branch will pre-test and validate the code.
-- pull request will only show what will be changed.
-- merge to the main branch will deploy/change the resources at Terraform.
-- The rollback plan would be to revert the PR.
-
 ## Why?
 
 - Personal project.
 - Learn more about the used tools.
 - Share knowledge (that's why is public).
+
+## Want help or test?
+
+**Read the [contrib file](.github/docs/CONTRIBUTING.md)**
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
