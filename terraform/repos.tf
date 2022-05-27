@@ -12,4 +12,8 @@ resource "github_repository" "public" {
   auto_init              = true
   archive_on_destroy     = true
   vulnerability_alerts   = true
+
+  lifecycle {
+    ignore_changes = [description]
+  }
 }
