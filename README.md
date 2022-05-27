@@ -35,7 +35,7 @@ This repo creates other repositories with pre configurated settings such as:
 
 ## Want help or test?
 
-**Read the [contrib file](.github/docs/CONTRIBUTING.md)**
+**Read the [contrib file](CONTRIBUTING.md)**
 
 ### Extra Docs and Ref:
 - [Terraform resource doc in this projects](terraform/docs/TERRAFORM-DOCS.md) 
