@@ -29,7 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_pub_repo_names"></a> [pub\_repo\_names](#input\_pub\_repo\_names) | List of public repository names | `list(string)` | <pre>[<br>  "legacy"<br>]</pre> | no |
+| <a name="input_pub_repo_names"></a> [pub\_repo\_names](#input\_pub\_repo\_names) | List of public repository names | `list(string)` | <pre>[<br>  "legacy",<br>  "tf-aws-luperca"<br>]</pre> | no |
 
 ## Outputs
 
