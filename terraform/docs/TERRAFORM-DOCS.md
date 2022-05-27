@@ -23,6 +23,7 @@ No modules.
 | [github_branch_protection.pub_release](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/branch_protection) | resource |
 | [github_repository.public](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
 | [github_repository_file.gitignore_file](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_file) | resource |
+| [github_repository_file.license_file](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_file) | resource |
 
 ## Inputs
 
