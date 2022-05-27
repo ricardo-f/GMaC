@@ -33,7 +33,7 @@ This repo creates other repositories with pre configurated settings such as:
 - Learn more about the used tools.
 - Share knowledge (that's why is public).
 
-## Want help or test?
+## Want to help or test?
 
 **Read the [contrib file](CONTRIBUTING.md)**
 
