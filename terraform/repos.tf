@@ -14,6 +14,6 @@ resource "github_repository" "public" {
   vulnerability_alerts   = true
 
   lifecycle {
-    ignore_changes = [description]
+    ignore_changes = [description, topics]
   }
 }
