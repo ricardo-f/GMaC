@@ -6,6 +6,8 @@ on:
   push:
     branches-ignore:
       - main
+    paths-ignore:
+      - '**.md'
 
 jobs:
   job_terraform:
